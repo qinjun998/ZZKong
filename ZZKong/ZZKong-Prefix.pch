@@ -1,0 +1,48 @@
+//
+//  ZZKong-Prefix.pch
+//  ZZKong
+//
+//  Created by lee on 2017/7/6.
+//  Copyright © 2017年 zzk. All rights reserved.
+//
+
+#ifndef ZZKong_Prefix_pch
+#define ZZKong_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import <CoreData/CoreData.h>
+#import "objc/runtime.h"
+
+//define
+#import "ETMacroDefine.h"
+#import "ETFuncDefine.h"
+#import "ETColorDefine.h"
+#import "ETSizeDefine.h"
+#import "ETNotificationCommonDefine.h"
+#import "ETUserDefaultCommonDefine.h"
+#import "ETNotificationDefine.h"
+
+#import <Masonry/Masonry.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <AFNetworking/AFNetworking.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "SDImageCache.h"
+#import "SDWebImageManager.h"
+#import "UIView+Toast.h"
+
+#import "ETCommonRequest.h"
+#import "ETCommonResponse.h"
+#import "ETCommonRequest+Helper.h"
+
+
+#import "ECDAppStatus.h"
+#import "UIView+loading.h"
+#import "UIViewController+custom.h"
+
+
+
+#endif /* ZZKong_Prefix_pch */
