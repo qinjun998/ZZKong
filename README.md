@@ -7,8 +7,8 @@
 这个架构集中了我过去3年多时间开发中实际使用的大量组件、自定义UI控件、Category和工具类。<br>
 整个架构可直接用到项目中，项目包含有大量的工具类和UI控件，解决登录等大量架构中的实际问题。<br>
 
-###架构中Common文件是项目一级目录，放置了所有项目（如果有多个）共有的公共组件，具体的多个项目代码可放在Modules中。<br>
-###Common
+架构中Common文件是项目一级目录，放置了所有项目（如果有多个）共有的公共组件，具体的多个项目代码可放在Modules中。<br>
+Common<br>
   *CustomView  公共的自定义UI控件，大部分是根据需求编写的特殊显示样式
   *Category    公共的Category，实际上大量的辅助方法也写在对应的Category中
   *Controller  公共的Controller和VC
@@ -19,18 +19,18 @@
   *DataCache   几种系统自带的持久化相关工具类
   *Delegate    系统公共代理
   
-###Modules
+Modules<br>
   *Base        项目的真正系统目录，里面文件基本上继承自Common文件夹，然后成为项目
    *BaseVC     本项目VC，如果需要改变成为自己的项目，需修改TBC.m类
    *BaseView   本项目使用的系统View，基本上直接继承Common
    *Storyboard 项目中使用的SB放在此文件夹
   
   
-###其他：
+其他：<br>
 
 登录界面集成了生产和开发的网络切换，在打包之后网络切换功能会被自动隐藏<br>
 
-###示例代码：
+示例代码：<br>
    *self.navigationBarHidden = YES;   /隐藏本页面NavigationBar
    *[self setNaviButtonType:ETNaviButtonReturn isLeft:YES];  //设置本页面左边出现回退按钮
    
